@@ -1,0 +1,89 @@
+header {
+
+    .overlay{
+        position: relative;
+
+        .image{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+
+            img{
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+    
+        .container{
+            max-width: 1260px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0 auto;
+            padding: 0 $pd-7;
+
+
+            .logo{
+                width: 80px;
+                height: 80px;
+                cursor: pointer;
+                margin-right: auto;
+            }
+
+            .nav-links li{
+                display: inline-block;
+                padding: 0 $pd-5 0 0;
+                position: relative;
+
+                a{
+                    line-height: 60px;
+                    @include styleText($fs-8, $fw-2, $color-dark-1);
+                    
+                    &:after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        height: 8px;
+                        width: 8px;
+                        left: 17%;
+
+                        border-radius: 50%;
+                        background-color: $color-main;
+                        transform: scale(0);
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover{
+                        color: $color-main;
+                        &:after{
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+
+                &.active{
+                    a{
+                        color: $color-main;
+                        &:after{
+                            transform: scale(1.1);
+                        }
+                        &:hover{
+                            &:after{
+                                transform: scale(1.5);
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .social-icon{
+                margin:0 $mg-0;
+                @include styleText($fs-8, $fw-2, $color-dark-1);
+
+                &:hover{
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}

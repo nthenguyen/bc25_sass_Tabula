@@ -1,0 +1,37 @@
+.carousel{
+    height: 650px;
+
+    .overlay{
+        position: relative;
+        height: 100%;
+
+        .image{
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+
+            img{
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+    
+        .container{
+            max-width: 1260px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left h1{
+                .title{
+                    display: block;
+                    @include styleText($fs-3, $fw-2, $color-main);
+                    margin: $mg-0 0;
+                }
+                .subtitle{
+                    @include styleText($fs-6 * 1.1, $fw-3, $color-dark-2);
+                }
+            }
+        }
+    }
+}

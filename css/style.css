@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 15px;
+  font-weight: 400;
+  color: #181818;
+  font-family: "Montserrat",Arial,Helvetica,sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+li {
+  list-style: none !important;
+}
+
+.cta {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #b61984;
+  padding: 15px 1.5rem;
+  margin: 0 5px;
+  border-radius: 50px;
+  letter-spacing: 0.015rem;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  transition: all 300ms ease;
+}
+
+.cta:hover {
+  background-color: #fff;
+  color: #b61984;
+  box-shadow: 0 0 0 1px #b61984 inset;
+}
+
+header .overlay {
+  position: relative;
+}
+
+header .overlay .image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+header .overlay .image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+header .overlay .container {
+  max-width: 1260px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+header .overlay .container .logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+header .overlay .container .nav-links li {
+  display: inline-block;
+  padding: 0 50px 0 0;
+  position: relative;
+}
+
+header .overlay .container .nav-links li a {
+  line-height: 60px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+}
+
+header .overlay .container .nav-links li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  left: 17%;
+  border-radius: 50%;
+  background-color: #b61984;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+header .overlay .container .nav-links li a:hover {
+  color: #b61984;
+}
+
+header .overlay .container .nav-links li a:hover:after {
+  transform: scale(1.5);
+}
+
+header .overlay .container .nav-links li.active a {
+  color: #b61984;
+}
+
+header .overlay .container .nav-links li.active a:after {
+  transform: scale(1.1);
+}
+
+header .overlay .container .nav-links li.active a:hover:after {
+  transform: scale(1.5);
+}
+
+header .overlay .container .social-icon {
+  margin: 0 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+}
+
+header .overlay .container .social-icon:hover {
+  color: #b61984;
+}
+
+.carousel {
+  height: 650px;
+}
+
+.carousel .overlay {
+  position: relative;
+  height: 100%;
+}
+
+.carousel .overlay .image {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.carousel .overlay .image img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .overlay .container {
+  max-width: 1260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel .overlay .container .left h1 .title {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+  margin: 5px 0;
+}
+
+.carousel .overlay .container .left h1 .subtitle {
+  font-size: 4.18rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.teacher .overlay {
+  position: relative;
+}
+
+.teacher .overlay .image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.teacher .overlay .image img {
+  background-color: #dcd1f0;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.teacher .overlay .container {
+  max-width: 1260px;
+}
+
+.teacher .overlay .container .card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 35px;
+  text-align: center;
+  height: 360px;
+  width: 270px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 200ms;
+}
+
+.teacher .overlay .container .card .card-img-wrap {
+  overflow: hidden;
+}
+
+.teacher .overlay .container .card .card-img-wrap img {
+  width: 100%;
+  transform: scale3d(1, 1, 1);
+  transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+}
+
+.teacher .overlay .container .card .card-img-wrap:hover img {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.teacher .overlay .container .card .card-country {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+
+.teacher .overlay .container .card .card-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #191919;
+}
+
+.teacher .overlay .container .card .card-text {
+  font-family: "Roboto",Arial,Helvetica,sans-serif;
+  margin-top: 15px;
+}
+
+.teacher .overlay .container .card:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.courses .overlay {
+  position: relative;
+}
+
+.courses .overlay .image {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */

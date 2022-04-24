@@ -1,0 +1,11 @@
+.cta{
+    @include styleText($fs-7, $fw-1, $color-white);
+    @include styleButton($color-main, $fs-1, $fs-4, $mg-0, $pd-5, $ls-1);
+    box-shadow: 0 0 0 $fs-9 $color-main inset;
+    transition: all 300ms ease;
+
+    &:hover{
+        @include styleButtonHover($color-white, $color-main);
+        box-shadow: 0 0 0 $fs-10 $color-main inset;
+    }
+}
