@@ -1,22 +1,6 @@
 .teacher{
+    background: url(../../images/Wave_White_bottom_right_shape_01.png) no-repeat center/cover $color-img;
 
-    .overlay{
-        position: relative;
-
-        .image{
-            position: absolute;
-            top: 0;
-            z-index: -1;
-            
-            img{
-                background-color: $color-img;
-                width: 100%;
-                height: 800px;
-                overflow: hidden;
-                object-fit: cover;
-            }
-        }
-        
         .container{
             max-width: 1260px;
 
@@ -26,7 +10,7 @@
                 margin-top: $mg-2;
                 text-align: center;
                 height: 360px;
-                width: 270px;
+                width: 100%;
                 border: none;
                 transition: all 0.2s ease-in-out;
                 transition-delay: 200ms;
@@ -64,7 +48,6 @@
                     box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
                 }
             }
-        }
-        
-    }
-} 
+        }       
+}
+

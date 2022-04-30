@@ -1,0 +1,8 @@
+.social-icon{
+    margin:0 $mg-0;
+    @include styleText($fs-8, $fw-2, $color-dark-1);
+
+    &:hover{
+        color: $color-main;
+    }
+}

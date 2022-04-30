@@ -1,6 +1,6 @@
 .cta{
     @include styleText($fs-7, $fw-1, $color-white);
-    @include styleButton($color-main, $fs-1, $fs-4, $mg-0, $pd-5, $ls-1);
+    @include styleButton($color-main, $fs-1, $fs-4, $mg-0, $br-1, $ls-1);
     box-shadow: 0 0 0 $fs-9 $color-main inset;
     transition: all 300ms ease;
 

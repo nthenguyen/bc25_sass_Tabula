@@ -17,6 +17,8 @@ $fs-7: 0.9rem;
 $fs-8: 13px;
 $fs-9: 3em;
 $fs-10: 1px;
+$fs-11: 1em;
+$fs-12: 3.5em;
 
 //font weight
 $fw-1: 400;
@@ -29,19 +31,23 @@ $ls-2: 0.03rem;
 
 //Padding
 $pd-1: 12px;
-$pd-2: 30px;
+$pd-2: 18px;
 $pd-3: 36px;
 $pd-4: 42px;
 $pd-5: 50px;
-$pd-6: 100px;
+$pd-6: 150px;
 $pd-7: 22px;
+$pd-8: 60px;
 
 //Margin
 $mg-0: 5px;
 $mg-1: 15px;
 $mg-2: 35px;
 $mg-3: 70px;
-$mg-4: 60px;
+$mg-4: 45px;
+
+//border-radius
+$br-1: 50px;
 
 //border
 $bd-1: 2px;
@@ -49,7 +55,7 @@ $bd-2: 8px;
 
 //break points
 $breakpoints: (
-    "extra-large": 1200px,
+    "extra-large": 1199px,
     "large": 992px,
     "medium": 768px,
     "small": 576px,

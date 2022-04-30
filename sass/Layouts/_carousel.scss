@@ -1,36 +1,40 @@
 .carousel{
+    background: url(../../images/Violet_top_left_wave.png) no-repeat bottom/contain;
     height: 650px;
 
-    .overlay{
-        position: relative;
-        height: 100%;
+    .container{
+        max-width: 1260px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-        .image{
-            position: absolute;
-            bottom: 0;
-            z-index: -1;
-
-            img{
-                width: 100%;
-                overflow: hidden;
+        .left h1{
+            .title{
+                display: block;
+                @include styleText($fs-3, $fw-2, $color-main);
+                margin: $mg-0 0;
+            }
+            .subtitle{
+                @include styleText($fs-6 * 1.1, $fw-3, $color-dark-2);
             }
         }
-    
+        .right{
+            img{
+                min-width: 100%;
+            }
+        }
+    }
+}
+//responsive
+@include responsive('large'){
+    .carousel{
         .container{
-            max-width: 1260px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            padding: $pd-3;
 
-            .left h1{
-                .title{
-                    display: block;
-                    @include styleText($fs-3, $fw-2, $color-main);
-                    margin: $mg-0 0;
-                }
-                .subtitle{
-                    @include styleText($fs-6 * 1.1, $fw-3, $color-dark-2);
-                }
+            .right{
+                margin: $mg-2 0;
             }
         }
     }

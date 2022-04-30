@@ -23,6 +23,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -31,23 +35,184 @@
         <div class="image">
           <img src="./images/yellow_top_wave_01.png" alt="" />
         </div>
-        <div class="container">
-          <img class="logo" src="./images/crest.png" alt="" />
-          <nav>
-            <ul class="nav-links my-0">
-              <li><a href="#">Home</a></li>
-              <li class="active"><a href="#">About</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Elements</a></li>
-            </ul>
-          </nav>
-          <nav>
-            <a href="#" class="cta">
-              <span><i class="fa-solid fa-phone-flip"></i></span>
-              <span class="cta-text">(+1) 555 234-8765</span>
-            </a>
+        <div class="fixed">
+          <div class="container">
+            <img class="logo" src="./images/crest.png" alt="" />
+
+            <div id="toggle"></div>
+
+            <nav>
+              <ul class="nav-links my-0">
+                <img src="./images/crest.png" alt="" />
+                <li>
+                  <a href="#">Home<i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li class="active">
+                  <a href="#">About<i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Courses<i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#">Blog<i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">Shop<i class="fa-solid fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Elements<i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                </li>
+                <div class="menu-button">
+                  <a href="#" class="cta">
+                    <span><i class="fa-solid fa-phone-flip"></i></span>
+                    <span class="cta-text">(+1) 555 234-8765</span>
+                  </a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                  <a href="#" class="social-icon"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </ul>
+            </nav>
+            <nav>
+              <a href="#" class="cta">
+                <span><i class="fa-solid fa-phone-flip"></i></span>
+                <span class="cta-text">(+1) 555 234-8765</span>
+              </a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="carousel">
+      <div class="container">
+        <div class="left wow animate__animated animate__fadeInLeft">
+          <h1>
+            <span class="title">ABOUT US</span>
+            <span class="subtitle">The language teaching experts</span>
+          </h1>
+        </div>
+        <div
+          class="right wow animate__animated animate__fadeIn"
+          data-wow-duration="2s"
+          data-wow-delay="0.2s"
+        >
+          <img src="./images/hero_team.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="teacher">
+      <div class="container">
+        <h1 id="loading" class="loader" style="display: none;">Loading...</h1>
+        <div id="teacher-list" class="row"></div>
+      </div>
+    </section>
+
+    <section class="courses">
+      <div class="container">
+        <div class="left wow animate__animated animate__fadeInLeft">
+          <img src="./images/conatct_inner.png" alt="" />
+        </div>
+        <div
+          class="right wow animate__animated animate__fadeIn"
+          data-wow-duration="2s"
+          data-wow-delay="0.2s"
+        >
+          <div class="right-wrap">
+            <h4>Find Your Course</h4>
+            <form>
+              <div class="contact-row mb-15">
+                <div class="contact-name relative">
+                  <i class="fa-solid fa-user"></i>
+                  <input
+                    type="text"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="contact-email relative">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="text"
+                    aria-required="true"
+                    aria-invalid="false"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="contact-list mb-15">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="dropdown">
+                  <input
+                    type="text"
+                    class="text-box"
+                    placeholder="English"
+                    readonly
+                  />
+                  <div class="option">
+                    <div onclick="value('English')">English</div>
+                    <div onclick="value('French')">French</div>
+                    <div onclick="value('Spanish')">Spanish</div>
+                    <div onclick="value('German')">German</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-message mb-15">
+                <i class="fa-solid fa-message"></i>
+                <textarea id="text-message" cols="30" rows="4"></textarea>
+              </div>
+            </form>
+            <a href="#send" class="cta">SEND</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow animate__animated animate__fadeInLeft"
+            data-wow-duration="2s"
+            data-wow-delay="0.2s"
+          >
+            <h3>Contact us</h3>
+            <a href="">
+              <i class="fa-solid fa-location-dot"></i>Franklin St, Greenpoint
+              Ave</a
+            >
+            <a href="#"><i class="fa-solid fa-phone-flip"></i>+2342 5446 67</a>
+            <a href="#"
+              ><i class="fa-solid fa-alarm-exclamation"></i>Monday - Friday: 8
+              AM - 5 PM</a
+            >
             <a href="#" class="social-icon"
               ><i class="fa-brands fa-twitter"></i
             ></a>
@@ -60,87 +225,38 @@
             <a href="#" class="social-icon"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <section class="carousel">
-      <div class="overlay">
-        <div class="image">
-          <img src="./images/Violet_top_left_wave.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="left">
-            <h1>
-              <span class="title">ABOUT US</span>
-              <span class="subtitle">The language teaching experts</span>
-            </h1>
           </div>
-          <div class="right">
-            <img src="./images/hero_team.png" alt="" />
+          <div
+            class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow animate__animated animate__fadeInLeft"
+            data-wow-duration="2s"
+            data-wow-delay="0.4s"
+          >
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Schedule</a>
+            <a href="#">Blog</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="teacher">
-      <div class="overlay">
-        <div class="image">
-          <img src="./images/Wave_White_bottom_right_shape_01.png" alt="" />
-        </div>
-        <div class="container">
-          <h1 id="loading" class="loader" style="display: none;">Loading...</h1>
-          <div id="teacher-list" class="row"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="courses">
-      <div class="overlay">
-        <div class="image">
-          <img src="./images/accent_bottom_wave_01.png" alt="" />
-        </div>
-        <div class="container">
-          <div class="left">
-            <img src="./images/hero_team.png" alt="" />
+          <div
+            class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow animate__animated animate__fadeInLeft"
+            data-wow-duration="2s"
+            data-wow-delay="0.6s"
+          >
+            <h3>About</h3>
+            <a href="#">About Us</a>
+            <a href="#">Events</a>
+            <a href="#">Get Quote</a>
+            <a href="#">Contact</a>
           </div>
-          <div class="right">
-            <h4>Find Your Course</h4>
+          <div
+            class="col-sm-6 col-md-6 col-lg-3 col-xl-3 wow animate__animated animate__fadeInLeft"
+            data-wow-duration="2s"
+            data-wow-delay="0.8s"
+          >
+            <h3>Newsletter</h3>
             <form>
-              <div class="contact-row">
-                <div class="contact-name">
-                  <span class="icon"><i class="fa-solid fa-user"></i></span>
-                  <input
-                    type="text"
-                    aria-required="true"
-                    aria-invalid="false"
-                    placeholder="Name"
-                  />
-                </div>
-                <div class="contact-email">
-                  <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                  <input
-                    type="text"
-                    aria-required="true"
-                    aria-invalid="false"
-                    placeholder="Email"
-                  />
-                </div>
-              </div>
-              <div class="contact-row">
-                <div class="contact-list">
-                  <span class="icon"
-                    ><i class="fa-solid fa-graduation-cap"></i
-                  ></span>
-                  <select>
-                    <option value="english">English</option>
-                    <option value="french">French</option>
-                    <option value="spanish">Spanish</option>
-                    <option value="german">German</option>
-                  </select>
-                </div>
-              </div>
+              <input type="email" placeholder="Your email" />
+              <a href="#send" class="cta">SUBSCRIBE</a>
             </form>
           </div>
         </div>
@@ -169,7 +285,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="libs/wowjs/wow.min.js"></script>
+    <script src="js/dropdown.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/teacher.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
